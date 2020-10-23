@@ -8,6 +8,7 @@
 import AsyncDisplayKit
 
 class ProductCardFinalNode: ASCellNode {
+    let backgroundNode = ASDisplayNode()
     let imageNode: ProductCardImageFinalNode
     let descriptionNode: ProductCardDescriptionFinalNode
     
@@ -21,6 +22,7 @@ class ProductCardFinalNode: ASCellNode {
         super.init()
         automaticallyManagesSubnodes = true
         backgroundColor = .white
+        backgroundNode.backgroundColor = .white
         clipsToBounds = false
         
         setShadow()
@@ -36,19 +38,21 @@ class ProductCardFinalNode: ASCellNode {
         )
         
         let mainInset = ASInsetLayoutSpec(
-            insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8),
+            insets: UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16),
             child: mainStack
         )
         
-        return mainInset
+        let backgroundInset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8), child: backgroundNode)
+        
+        return ASBackgroundLayoutSpec(child: mainInset, background: backgroundInset)
     }
     
     func setShadow() {
-        cornerRadius = 8
-        shadowColor = UIColor.black.cgColor
-        shadowOpacity = 0.12
-        shadowOffset.height = 2
-        shadowRadius = 4
+        backgroundNode.cornerRadius = 8
+        backgroundNode.shadowColor = UIColor.black.cgColor
+        backgroundNode.shadowOpacity = 0.12
+        backgroundNode.shadowOffset.height = 2
+        backgroundNode.shadowRadius = 4
     }
     
     override func layout() {
@@ -57,4 +61,3 @@ class ProductCardFinalNode: ASCellNode {
         layer.shadowPath = UIBezierPath(rect: bounds).cgPath
     }
 }
-
