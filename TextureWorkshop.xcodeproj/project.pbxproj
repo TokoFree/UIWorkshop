@@ -8,26 +8,156 @@
 
 /* Begin PBXBuildFile section */
 		8D6A5511453F96459F5DEB5E /* Pods_TextureWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874DD9397CB4433A269C4E40 /* Pods_TextureWorkshop.framework */; };
+		E508989D2542F32C00E9646C /* UIKitDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E508983E2542F32B00E9646C /* UIKitDemoViewController.xib */; };
+		E508989E2542F32C00E9646C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898412542F32B00E9646C /* RatingView.swift */; };
+		E508989F2542F32C00E9646C /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50898422542F32B00E9646C /* RatingView.xib */; };
+		E50898A02542F32C00E9646C /* ProductCardWishlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50898432542F32B00E9646C /* ProductCardWishlistTableViewCell.xib */; };
+		E50898A12542F32C00E9646C /* ProductCardWishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898442542F32B00E9646C /* ProductCardWishlistTableViewCell.swift */; };
+		E50898A32542F32C00E9646C /* UIKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898462542F32B00E9646C /* UIKitDemoViewController.swift */; };
+		E50898A42542F32C00E9646C /* BackgroundLayoutVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898492542F32B00E9646C /* BackgroundLayoutVCInteractive.swift */; };
+		E50898A52542F32C00E9646C /* BackgroundLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508984A2542F32B00E9646C /* BackgroundLayoutVC.swift */; };
+		E50898A62542F32C00E9646C /* InteractiveListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508984C2542F32B00E9646C /* InteractiveListVC.swift */; };
+		E50898A72542F32C00E9646C /* WrapperLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508984E2542F32B00E9646C /* WrapperLayoutVC.swift */; };
+		E50898A82542F32C00E9646C /* WrapperLayoutVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508984F2542F32B00E9646C /* WrapperLayoutVCInteractive.swift */; };
+		E50898A92542F32C00E9646C /* CenterLayoutVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898512542F32B00E9646C /* CenterLayoutVCInteractive.swift */; };
+		E50898AA2542F32C00E9646C /* CenterLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898522542F32B00E9646C /* CenterLayoutVC.swift */; };
+		E50898AC2542F32C00E9646C /* StackLayoutGrowVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898552542F32B00E9646C /* StackLayoutGrowVCInteractive.swift */; };
+		E50898AD2542F32C00E9646C /* StackLayoutGrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898562542F32B00E9646C /* StackLayoutGrowVC.swift */; };
+		E50898AE2542F32C00E9646C /* BackgroundOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898582542F32B00E9646C /* BackgroundOptionsNode.swift */; };
+		E50898AF2542F32C00E9646C /* OverlayOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898592542F32B00E9646C /* OverlayOptionsNode.swift */; };
+		E50898B02542F32C00E9646C /* CenterOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508985A2542F32B00E9646C /* CenterOptionsNode.swift */; };
+		E50898B12542F32C00E9646C /* InsetOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508985B2542F32B00E9646C /* InsetOptionsNode.swift */; };
+		E50898B22542F32C00E9646C /* Exercise2CheatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508985D2542F32B00E9646C /* Exercise2CheatVC.swift */; };
+		E50898B32542F32C00E9646C /* Exercise3CheatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508985E2542F32B00E9646C /* Exercise3CheatVC.swift */; };
+		E50898B42542F32C00E9646C /* Exercise1CheatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508985F2542F32B00E9646C /* Exercise1CheatVC.swift */; };
+		E50898B52542F32C00E9646C /* KustomNodeCheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898602542F32B00E9646C /* KustomNodeCheat.swift */; };
+		E50898B62542F32C00E9646C /* FlexOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898622542F32B00E9646C /* FlexOptionsNode.swift */; };
+		E50898B72542F32C00E9646C /* StackJustifyOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898632542F32B00E9646C /* StackJustifyOptionsNode.swift */; };
+		E50898B82542F32C00E9646C /* StackSpacingOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898642542F32B00E9646C /* StackSpacingOptionsNode.swift */; };
+		E50898B92542F32C00E9646C /* StackDirectionOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898652542F32B00E9646C /* StackDirectionOptionsNode.swift */; };
+		E50898BA2542F32C00E9646C /* StackAlignOptionsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898662542F32B00E9646C /* StackAlignOptionsNode.swift */; };
+		E50898BB2542F32C00E9646C /* BoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898672542F32B00E9646C /* BoxNode.swift */; };
+		E50898BC2542F32C00E9646C /* CustomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508986A2542F32B00E9646C /* CustomNode.swift */; };
+		E50898BD2542F32C00E9646C /* LayoutExercise1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508986B2542F32B00E9646C /* LayoutExercise1VC.swift */; };
+		E50898BE2542F32C00E9646C /* LayoutExercise3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508986C2542F32B00E9646C /* LayoutExercise3VC.swift */; };
+		E50898BF2542F32C00E9646C /* LayoutExercise2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508986D2542F32B00E9646C /* LayoutExercise2VC.swift */; };
+		E50898C02542F32C00E9646C /* LayoutBreakdown2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508986F2542F32B00E9646C /* LayoutBreakdown2VC.swift */; };
+		E50898C12542F32C00E9646C /* LayoutBreakdown1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898702542F32B00E9646C /* LayoutBreakdown1VC.swift */; };
+		E50898C22542F32C00E9646C /* StackLayoutShrinkVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898722542F32B00E9646C /* StackLayoutShrinkVCInteractive.swift */; };
+		E50898C32542F32C00E9646C /* StackLayoutShrinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898732542F32B00E9646C /* StackLayoutShrinkVC.swift */; };
+		E50898C42542F32C00E9646C /* StackLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898752542F32B00E9646C /* StackLayoutVC.swift */; };
+		E50898C52542F32C00E9646C /* StackLayoutVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898762542F32B00E9646C /* StackLayoutVCInteractive.swift */; };
+		E50898C62542F32C00E9646C /* InsetLayoutVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898782542F32B00E9646C /* InsetLayoutVCInteractive.swift */; };
+		E50898C72542F32C00E9646C /* InsetLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898792542F32B00E9646C /* InsetLayoutVC.swift */; };
+		E50898C82542F32C00E9646C /* OverlayLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508987B2542F32B00E9646C /* OverlayLayoutVC.swift */; };
+		E50898C92542F32C00E9646C /* OverlayLayoutVCInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508987C2542F32B00E9646C /* OverlayLayoutVCInteractive.swift */; };
+		E50898CA2542F32C00E9646C /* CreateProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508987F2542F32B00E9646C /* CreateProductCardViewController.swift */; };
+		E50898CB2542F32C00E9646C /* ProductCardStarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898802542F32B00E9646C /* ProductCardStarterViewController.swift */; };
+		E50898CC2542F32C00E9646C /* ProductCardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898812542F32B00E9646C /* ProductCardNode.swift */; };
+		E50898CD2542F32C00E9646C /* ProductCardShopNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898832542F32B00E9646C /* ProductCardShopNode.swift */; };
+		E50898CE2542F32C00E9646C /* ProductCardImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898842542F32B00E9646C /* ProductCardImageNode.swift */; };
+		E50898CF2542F32C00E9646C /* ProductCardWishlistNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898852542F32B00E9646C /* ProductCardWishlistNode.swift */; };
+		E50898D02542F32C00E9646C /* ProductCardDescriptionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898862542F32B00E9646C /* ProductCardDescriptionNode.swift */; };
+		E50898D12542F32C00E9646C /* ProductCardReviewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898872542F32B00E9646C /* ProductCardReviewNode.swift */; };
+		E50898D32542F32C00E9646C /* ProductCardImageFinalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508988B2542F32B00E9646C /* ProductCardImageFinalNode.swift */; };
+		E50898D42542F32C00E9646C /* ProductCardShopFinalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508988C2542F32B00E9646C /* ProductCardShopFinalNode.swift */; };
+		E50898D52542F32C00E9646C /* ProductCardWishlistFinalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508988D2542F32B00E9646C /* ProductCardWishlistFinalNode.swift */; };
+		E50898D62542F32C00E9646C /* ProductCardDescriptionFinalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508988E2542F32B00E9646C /* ProductCardDescriptionFinalNode.swift */; };
+		E50898D72542F32C00E9646C /* ProductCardReviewFinalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508988F2542F32B00E9646C /* ProductCardReviewFinalNode.swift */; };
+		E50898D82542F32C00E9646C /* CreateProductCardFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898902542F32B00E9646C /* CreateProductCardFinalViewController.swift */; };
+		E50898D92542F32C00E9646C /* ProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898912542F32B00E9646C /* ProductCardViewController.swift */; };
+		E50898DA2542F32C00E9646C /* ProductCardFinalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898922542F32B00E9646C /* ProductCardFinalNode.swift */; };
+		E50898DB2542F32C00E9646C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898932542F32B00E9646C /* Product.swift */; };
+		E50898DC2542F32C00E9646C /* BasicUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898962542F32C00E9646C /* BasicUIKitViewController.swift */; };
+		E50898DD2542F32C00E9646C /* BasicTextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50898972542F32C00E9646C /* BasicTextureViewController.swift */; };
+		E50898DF2542F32C00E9646C /* BasicUIKitFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508989A2542F32C00E9646C /* BasicUIKitFinishedViewController.swift */; };
+		E50898E02542F32C00E9646C /* BasicTextureFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508989B2542F32C00E9646C /* BasicTextureFinishedViewController.swift */; };
+		E50898E12542F32C00E9646C /* BasicUIKitFinishedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E508989C2542F32C00E9646C /* BasicUIKitFinishedViewController.xib */; };
 		E563DD4F252C9875009BF5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563DD4E252C9875009BF5BC /* AppDelegate.swift */; };
-		E563DD51252C9875009BF5BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563DD50252C9875009BF5BC /* SceneDelegate.swift */; };
 		E563DD53252C9875009BF5BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563DD52252C9875009BF5BC /* ViewController.swift */; };
 		E563DD58252C9878009BF5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E563DD57252C9878009BF5BC /* Assets.xcassets */; };
 		E563DD5B252C9878009BF5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E563DD59252C9878009BF5BC /* LaunchScreen.storyboard */; };
-		E563DD6E252C9CD1009BF5BC /* Lesson1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563DD6D252C9CD1009BF5BC /* Lesson1VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15E5C58AD5B5F2002540B29F /* Pods-TextureWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-TextureWorkshop/Pods-TextureWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 		874DD9397CB4433A269C4E40 /* Pods_TextureWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48093CF5485624B47478A2B /* Pods-TextureWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureWorkshop.release.xcconfig"; path = "Target Support Files/Pods-TextureWorkshop/Pods-TextureWorkshop.release.xcconfig"; sourceTree = "<group>"; };
+		E508983E2542F32B00E9646C /* UIKitDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIKitDemoViewController.xib; sourceTree = "<group>"; };
+		E50898412542F32B00E9646C /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		E50898422542F32B00E9646C /* RatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
+		E50898432542F32B00E9646C /* ProductCardWishlistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCardWishlistTableViewCell.xib; sourceTree = "<group>"; };
+		E50898442542F32B00E9646C /* ProductCardWishlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardWishlistTableViewCell.swift; sourceTree = "<group>"; };
+		E50898452542F32B00E9646C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E50898462542F32B00E9646C /* UIKitDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitDemoViewController.swift; sourceTree = "<group>"; };
+		E50898492542F32B00E9646C /* BackgroundLayoutVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundLayoutVCInteractive.swift; sourceTree = "<group>"; };
+		E508984A2542F32B00E9646C /* BackgroundLayoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundLayoutVC.swift; sourceTree = "<group>"; };
+		E508984C2542F32B00E9646C /* InteractiveListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListVC.swift; sourceTree = "<group>"; };
+		E508984E2542F32B00E9646C /* WrapperLayoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrapperLayoutVC.swift; sourceTree = "<group>"; };
+		E508984F2542F32B00E9646C /* WrapperLayoutVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrapperLayoutVCInteractive.swift; sourceTree = "<group>"; };
+		E50898512542F32B00E9646C /* CenterLayoutVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterLayoutVCInteractive.swift; sourceTree = "<group>"; };
+		E50898522542F32B00E9646C /* CenterLayoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterLayoutVC.swift; sourceTree = "<group>"; };
+		E50898532542F32B00E9646C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E50898552542F32B00E9646C /* StackLayoutGrowVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayoutGrowVCInteractive.swift; sourceTree = "<group>"; };
+		E50898562542F32B00E9646C /* StackLayoutGrowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayoutGrowVC.swift; sourceTree = "<group>"; };
+		E50898582542F32B00E9646C /* BackgroundOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundOptionsNode.swift; sourceTree = "<group>"; };
+		E50898592542F32B00E9646C /* OverlayOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayOptionsNode.swift; sourceTree = "<group>"; };
+		E508985A2542F32B00E9646C /* CenterOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterOptionsNode.swift; sourceTree = "<group>"; };
+		E508985B2542F32B00E9646C /* InsetOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetOptionsNode.swift; sourceTree = "<group>"; };
+		E508985D2542F32B00E9646C /* Exercise2CheatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise2CheatVC.swift; sourceTree = "<group>"; };
+		E508985E2542F32B00E9646C /* Exercise3CheatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise3CheatVC.swift; sourceTree = "<group>"; };
+		E508985F2542F32B00E9646C /* Exercise1CheatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise1CheatVC.swift; sourceTree = "<group>"; };
+		E50898602542F32B00E9646C /* KustomNodeCheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KustomNodeCheat.swift; sourceTree = "<group>"; };
+		E50898622542F32B00E9646C /* FlexOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexOptionsNode.swift; sourceTree = "<group>"; };
+		E50898632542F32B00E9646C /* StackJustifyOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackJustifyOptionsNode.swift; sourceTree = "<group>"; };
+		E50898642542F32B00E9646C /* StackSpacingOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackSpacingOptionsNode.swift; sourceTree = "<group>"; };
+		E50898652542F32B00E9646C /* StackDirectionOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackDirectionOptionsNode.swift; sourceTree = "<group>"; };
+		E50898662542F32B00E9646C /* StackAlignOptionsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackAlignOptionsNode.swift; sourceTree = "<group>"; };
+		E50898672542F32B00E9646C /* BoxNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxNode.swift; sourceTree = "<group>"; };
+		E508986A2542F32B00E9646C /* CustomNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNode.swift; sourceTree = "<group>"; };
+		E508986B2542F32B00E9646C /* LayoutExercise1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutExercise1VC.swift; sourceTree = "<group>"; };
+		E508986C2542F32B00E9646C /* LayoutExercise3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutExercise3VC.swift; sourceTree = "<group>"; };
+		E508986D2542F32B00E9646C /* LayoutExercise2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutExercise2VC.swift; sourceTree = "<group>"; };
+		E508986F2542F32B00E9646C /* LayoutBreakdown2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutBreakdown2VC.swift; sourceTree = "<group>"; };
+		E50898702542F32B00E9646C /* LayoutBreakdown1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutBreakdown1VC.swift; sourceTree = "<group>"; };
+		E50898722542F32B00E9646C /* StackLayoutShrinkVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayoutShrinkVCInteractive.swift; sourceTree = "<group>"; };
+		E50898732542F32B00E9646C /* StackLayoutShrinkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayoutShrinkVC.swift; sourceTree = "<group>"; };
+		E50898752542F32B00E9646C /* StackLayoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayoutVC.swift; sourceTree = "<group>"; };
+		E50898762542F32B00E9646C /* StackLayoutVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackLayoutVCInteractive.swift; sourceTree = "<group>"; };
+		E50898782542F32B00E9646C /* InsetLayoutVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLayoutVCInteractive.swift; sourceTree = "<group>"; };
+		E50898792542F32B00E9646C /* InsetLayoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLayoutVC.swift; sourceTree = "<group>"; };
+		E508987B2542F32B00E9646C /* OverlayLayoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayLayoutVC.swift; sourceTree = "<group>"; };
+		E508987C2542F32B00E9646C /* OverlayLayoutVCInteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayLayoutVCInteractive.swift; sourceTree = "<group>"; };
+		E508987F2542F32B00E9646C /* CreateProductCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProductCardViewController.swift; sourceTree = "<group>"; };
+		E50898802542F32B00E9646C /* ProductCardStarterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardStarterViewController.swift; sourceTree = "<group>"; };
+		E50898812542F32B00E9646C /* ProductCardNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardNode.swift; sourceTree = "<group>"; };
+		E50898832542F32B00E9646C /* ProductCardShopNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardShopNode.swift; sourceTree = "<group>"; };
+		E50898842542F32B00E9646C /* ProductCardImageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardImageNode.swift; sourceTree = "<group>"; };
+		E50898852542F32B00E9646C /* ProductCardWishlistNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardWishlistNode.swift; sourceTree = "<group>"; };
+		E50898862542F32B00E9646C /* ProductCardDescriptionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardDescriptionNode.swift; sourceTree = "<group>"; };
+		E50898872542F32B00E9646C /* ProductCardReviewNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardReviewNode.swift; sourceTree = "<group>"; };
+		E50898882542F32B00E9646C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E508988B2542F32B00E9646C /* ProductCardImageFinalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardImageFinalNode.swift; sourceTree = "<group>"; };
+		E508988C2542F32B00E9646C /* ProductCardShopFinalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardShopFinalNode.swift; sourceTree = "<group>"; };
+		E508988D2542F32B00E9646C /* ProductCardWishlistFinalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardWishlistFinalNode.swift; sourceTree = "<group>"; };
+		E508988E2542F32B00E9646C /* ProductCardDescriptionFinalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardDescriptionFinalNode.swift; sourceTree = "<group>"; };
+		E508988F2542F32B00E9646C /* ProductCardReviewFinalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardReviewFinalNode.swift; sourceTree = "<group>"; };
+		E50898902542F32B00E9646C /* CreateProductCardFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProductCardFinalViewController.swift; sourceTree = "<group>"; };
+		E50898912542F32B00E9646C /* ProductCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardViewController.swift; sourceTree = "<group>"; };
+		E50898922542F32B00E9646C /* ProductCardFinalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardFinalNode.swift; sourceTree = "<group>"; };
+		E50898932542F32B00E9646C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E50898962542F32C00E9646C /* BasicUIKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicUIKitViewController.swift; sourceTree = "<group>"; };
+		E50898972542F32C00E9646C /* BasicTextureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTextureViewController.swift; sourceTree = "<group>"; };
+		E50898982542F32C00E9646C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E508989A2542F32C00E9646C /* BasicUIKitFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicUIKitFinishedViewController.swift; sourceTree = "<group>"; };
+		E508989B2542F32C00E9646C /* BasicTextureFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTextureFinishedViewController.swift; sourceTree = "<group>"; };
+		E508989C2542F32C00E9646C /* BasicUIKitFinishedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicUIKitFinishedViewController.xib; sourceTree = "<group>"; };
 		E563DD4B252C9875009BF5BC /* TextureWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E563DD4E252C9875009BF5BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E563DD50252C9875009BF5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E563DD52252C9875009BF5BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E563DD57252C9878009BF5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E563DD5A252C9878009BF5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E563DD5C252C9878009BF5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E563DD6D252C9CD1009BF5BC /* Lesson1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +178,287 @@
 				874DD9397CB4433A269C4E40 /* Pods_TextureWorkshop.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E508983D2542F32B00E9646C /* Session 4 - UIKit Way */ = {
+			isa = PBXGroup;
+			children = (
+				E508983E2542F32B00E9646C /* UIKitDemoViewController.xib */,
+				E508983F2542F32B00E9646C /* InterfaceBuilder */,
+				E50898452542F32B00E9646C /* README.md */,
+				E50898462542F32B00E9646C /* UIKitDemoViewController.swift */,
+			);
+			path = "Session 4 - UIKit Way";
+			sourceTree = "<group>";
+		};
+		E508983F2542F32B00E9646C /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				E50898402542F32B00E9646C /* Components */,
+				E50898432542F32B00E9646C /* ProductCardWishlistTableViewCell.xib */,
+				E50898442542F32B00E9646C /* ProductCardWishlistTableViewCell.swift */,
+			);
+			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		E50898402542F32B00E9646C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E50898412542F32B00E9646C /* RatingView.swift */,
+				E50898422542F32B00E9646C /* RatingView.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E50898472542F32B00E9646C /* Session 2 - InteractiveUI */ = {
+			isa = PBXGroup;
+			children = (
+				E50898482542F32B00E9646C /* Background */,
+				E508984B2542F32B00E9646C /* ListVC */,
+				E508984D2542F32B00E9646C /* Wrapper */,
+				E50898502542F32B00E9646C /* Center */,
+				E50898532542F32B00E9646C /* README.md */,
+				E50898542542F32B00E9646C /* StackGrow */,
+				E50898572542F32B00E9646C /* Components */,
+				E50898682542F32B00E9646C /* Exercise */,
+				E508986E2542F32B00E9646C /* LayoutBreakdown */,
+				E50898712542F32B00E9646C /* StackShrink */,
+				E50898742542F32B00E9646C /* Stack */,
+				E50898772542F32B00E9646C /* Inset */,
+				E508987A2542F32B00E9646C /* Overlay */,
+			);
+			path = "Session 2 - InteractiveUI";
+			sourceTree = "<group>";
+		};
+		E50898482542F32B00E9646C /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				E50898492542F32B00E9646C /* BackgroundLayoutVCInteractive.swift */,
+				E508984A2542F32B00E9646C /* BackgroundLayoutVC.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		E508984B2542F32B00E9646C /* ListVC */ = {
+			isa = PBXGroup;
+			children = (
+				E508984C2542F32B00E9646C /* InteractiveListVC.swift */,
+			);
+			path = ListVC;
+			sourceTree = "<group>";
+		};
+		E508984D2542F32B00E9646C /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E508984E2542F32B00E9646C /* WrapperLayoutVC.swift */,
+				E508984F2542F32B00E9646C /* WrapperLayoutVCInteractive.swift */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		E50898502542F32B00E9646C /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				E50898512542F32B00E9646C /* CenterLayoutVCInteractive.swift */,
+				E50898522542F32B00E9646C /* CenterLayoutVC.swift */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		E50898542542F32B00E9646C /* StackGrow */ = {
+			isa = PBXGroup;
+			children = (
+				E50898552542F32B00E9646C /* StackLayoutGrowVCInteractive.swift */,
+				E50898562542F32B00E9646C /* StackLayoutGrowVC.swift */,
+			);
+			path = StackGrow;
+			sourceTree = "<group>";
+		};
+		E50898572542F32B00E9646C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E50898582542F32B00E9646C /* BackgroundOptionsNode.swift */,
+				E50898592542F32B00E9646C /* OverlayOptionsNode.swift */,
+				E508985A2542F32B00E9646C /* CenterOptionsNode.swift */,
+				E508985B2542F32B00E9646C /* InsetOptionsNode.swift */,
+				E508985C2542F32B00E9646C /* Cheats */,
+				E50898612542F32B00E9646C /* StackOptions */,
+				E50898672542F32B00E9646C /* BoxNode.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E508985C2542F32B00E9646C /* Cheats */ = {
+			isa = PBXGroup;
+			children = (
+				E508985D2542F32B00E9646C /* Exercise2CheatVC.swift */,
+				E508985E2542F32B00E9646C /* Exercise3CheatVC.swift */,
+				E508985F2542F32B00E9646C /* Exercise1CheatVC.swift */,
+				E50898602542F32B00E9646C /* KustomNodeCheat.swift */,
+			);
+			path = Cheats;
+			sourceTree = "<group>";
+		};
+		E50898612542F32B00E9646C /* StackOptions */ = {
+			isa = PBXGroup;
+			children = (
+				E50898622542F32B00E9646C /* FlexOptionsNode.swift */,
+				E50898632542F32B00E9646C /* StackJustifyOptionsNode.swift */,
+				E50898642542F32B00E9646C /* StackSpacingOptionsNode.swift */,
+				E50898652542F32B00E9646C /* StackDirectionOptionsNode.swift */,
+				E50898662542F32B00E9646C /* StackAlignOptionsNode.swift */,
+			);
+			path = StackOptions;
+			sourceTree = "<group>";
+		};
+		E50898682542F32B00E9646C /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				E50898692542F32B00E9646C /* CustomNode */,
+				E508986B2542F32B00E9646C /* LayoutExercise1VC.swift */,
+				E508986C2542F32B00E9646C /* LayoutExercise3VC.swift */,
+				E508986D2542F32B00E9646C /* LayoutExercise2VC.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		E50898692542F32B00E9646C /* CustomNode */ = {
+			isa = PBXGroup;
+			children = (
+				E508986A2542F32B00E9646C /* CustomNode.swift */,
+			);
+			path = CustomNode;
+			sourceTree = "<group>";
+		};
+		E508986E2542F32B00E9646C /* LayoutBreakdown */ = {
+			isa = PBXGroup;
+			children = (
+				E508986F2542F32B00E9646C /* LayoutBreakdown2VC.swift */,
+				E50898702542F32B00E9646C /* LayoutBreakdown1VC.swift */,
+			);
+			path = LayoutBreakdown;
+			sourceTree = "<group>";
+		};
+		E50898712542F32B00E9646C /* StackShrink */ = {
+			isa = PBXGroup;
+			children = (
+				E50898722542F32B00E9646C /* StackLayoutShrinkVCInteractive.swift */,
+				E50898732542F32B00E9646C /* StackLayoutShrinkVC.swift */,
+			);
+			path = StackShrink;
+			sourceTree = "<group>";
+		};
+		E50898742542F32B00E9646C /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				E50898752542F32B00E9646C /* StackLayoutVC.swift */,
+				E50898762542F32B00E9646C /* StackLayoutVCInteractive.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		E50898772542F32B00E9646C /* Inset */ = {
+			isa = PBXGroup;
+			children = (
+				E50898782542F32B00E9646C /* InsetLayoutVCInteractive.swift */,
+				E50898792542F32B00E9646C /* InsetLayoutVC.swift */,
+			);
+			path = Inset;
+			sourceTree = "<group>";
+		};
+		E508987A2542F32B00E9646C /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				E508987B2542F32B00E9646C /* OverlayLayoutVC.swift */,
+				E508987C2542F32B00E9646C /* OverlayLayoutVCInteractive.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		E508987D2542F32B00E9646C /* Session 3 - Create Product Card */ = {
+			isa = PBXGroup;
+			children = (
+				E508987E2542F32B00E9646C /* Start */,
+				E50898882542F32B00E9646C /* README.md */,
+				E50898892542F32B00E9646C /* End */,
+				E50898932542F32B00E9646C /* Product.swift */,
+			);
+			path = "Session 3 - Create Product Card";
+			sourceTree = "<group>";
+		};
+		E508987E2542F32B00E9646C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				E508987F2542F32B00E9646C /* CreateProductCardViewController.swift */,
+				E50898802542F32B00E9646C /* ProductCardStarterViewController.swift */,
+				E50898812542F32B00E9646C /* ProductCardNode.swift */,
+				E50898822542F32B00E9646C /* Components */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		E50898822542F32B00E9646C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E50898832542F32B00E9646C /* ProductCardShopNode.swift */,
+				E50898842542F32B00E9646C /* ProductCardImageNode.swift */,
+				E50898852542F32B00E9646C /* ProductCardWishlistNode.swift */,
+				E50898862542F32B00E9646C /* ProductCardDescriptionNode.swift */,
+				E50898872542F32B00E9646C /* ProductCardReviewNode.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E50898892542F32B00E9646C /* End */ = {
+			isa = PBXGroup;
+			children = (
+				E508988A2542F32B00E9646C /* Components */,
+				E50898902542F32B00E9646C /* CreateProductCardFinalViewController.swift */,
+				E50898912542F32B00E9646C /* ProductCardViewController.swift */,
+				E50898922542F32B00E9646C /* ProductCardFinalNode.swift */,
+			);
+			path = End;
+			sourceTree = "<group>";
+		};
+		E508988A2542F32B00E9646C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E508988B2542F32B00E9646C /* ProductCardImageFinalNode.swift */,
+				E508988C2542F32B00E9646C /* ProductCardShopFinalNode.swift */,
+				E508988D2542F32B00E9646C /* ProductCardWishlistFinalNode.swift */,
+				E508988E2542F32B00E9646C /* ProductCardDescriptionFinalNode.swift */,
+				E508988F2542F32B00E9646C /* ProductCardReviewFinalNode.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E50898942542F32C00E9646C /* Session 1 - Basic */ = {
+			isa = PBXGroup;
+			children = (
+				E50898952542F32C00E9646C /* Start */,
+				E50898982542F32C00E9646C /* README.md */,
+				E50898992542F32C00E9646C /* End */,
+			);
+			path = "Session 1 - Basic";
+			sourceTree = "<group>";
+		};
+		E50898952542F32C00E9646C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				E50898962542F32C00E9646C /* BasicUIKitViewController.swift */,
+				E50898972542F32C00E9646C /* BasicTextureViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		E50898992542F32C00E9646C /* End */ = {
+			isa = PBXGroup;
+			children = (
+				E508989A2542F32C00E9646C /* BasicUIKitFinishedViewController.swift */,
+				E508989B2542F32C00E9646C /* BasicTextureFinishedViewController.swift */,
+				E508989C2542F32C00E9646C /* BasicUIKitFinishedViewController.xib */,
+			);
+			path = End;
 			sourceTree = "<group>";
 		};
 		E563DD42252C9874009BF5BC = {
@@ -71,13 +482,15 @@
 		E563DD4D252C9875009BF5BC /* TextureWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				E50898942542F32C00E9646C /* Session 1 - Basic */,
+				E50898472542F32B00E9646C /* Session 2 - InteractiveUI */,
+				E508987D2542F32B00E9646C /* Session 3 - Create Product Card */,
+				E508983D2542F32B00E9646C /* Session 4 - UIKit Way */,
 				E563DD4E252C9875009BF5BC /* AppDelegate.swift */,
-				E563DD50252C9875009BF5BC /* SceneDelegate.swift */,
 				E563DD52252C9875009BF5BC /* ViewController.swift */,
 				E563DD57252C9878009BF5BC /* Assets.xcassets */,
 				E563DD59252C9878009BF5BC /* LaunchScreen.storyboard */,
 				E563DD5C252C9878009BF5BC /* Info.plist */,
-				E563DD6D252C9CD1009BF5BC /* Lesson1VC.swift */,
 			);
 			path = TextureWorkshop;
 			sourceTree = "<group>";
@@ -150,8 +563,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E508989D2542F32C00E9646C /* UIKitDemoViewController.xib in Resources */,
+				E50898E12542F32C00E9646C /* BasicUIKitFinishedViewController.xib in Resources */,
+				E50898A02542F32C00E9646C /* ProductCardWishlistTableViewCell.xib in Resources */,
 				E563DD5B252C9878009BF5BC /* LaunchScreen.storyboard in Resources */,
 				E563DD58252C9878009BF5BC /* Assets.xcassets in Resources */,
+				E508989F2542F32C00E9646C /* RatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,10 +621,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E563DD6E252C9CD1009BF5BC /* Lesson1VC.swift in Sources */,
+				E50898D32542F32C00E9646C /* ProductCardImageFinalNode.swift in Sources */,
+				E50898B72542F32C00E9646C /* StackJustifyOptionsNode.swift in Sources */,
+				E50898C92542F32C00E9646C /* OverlayLayoutVCInteractive.swift in Sources */,
+				E50898C42542F32C00E9646C /* StackLayoutVC.swift in Sources */,
+				E50898C72542F32C00E9646C /* InsetLayoutVC.swift in Sources */,
+				E50898AA2542F32C00E9646C /* CenterLayoutVC.swift in Sources */,
+				E50898B22542F32C00E9646C /* Exercise2CheatVC.swift in Sources */,
+				E50898BF2542F32C00E9646C /* LayoutExercise2VC.swift in Sources */,
+				E50898B52542F32C00E9646C /* KustomNodeCheat.swift in Sources */,
+				E50898A92542F32C00E9646C /* CenterLayoutVCInteractive.swift in Sources */,
+				E50898CE2542F32C00E9646C /* ProductCardImageNode.swift in Sources */,
+				E50898A82542F32C00E9646C /* WrapperLayoutVCInteractive.swift in Sources */,
+				E50898AD2542F32C00E9646C /* StackLayoutGrowVC.swift in Sources */,
+				E50898DF2542F32C00E9646C /* BasicUIKitFinishedViewController.swift in Sources */,
+				E50898D02542F32C00E9646C /* ProductCardDescriptionNode.swift in Sources */,
 				E563DD53252C9875009BF5BC /* ViewController.swift in Sources */,
+				E50898B02542F32C00E9646C /* CenterOptionsNode.swift in Sources */,
+				E50898D72542F32C00E9646C /* ProductCardReviewFinalNode.swift in Sources */,
+				E50898DB2542F32C00E9646C /* Product.swift in Sources */,
 				E563DD4F252C9875009BF5BC /* AppDelegate.swift in Sources */,
-				E563DD51252C9875009BF5BC /* SceneDelegate.swift in Sources */,
+				E50898DC2542F32C00E9646C /* BasicUIKitViewController.swift in Sources */,
+				E50898B62542F32C00E9646C /* FlexOptionsNode.swift in Sources */,
+				E50898AC2542F32C00E9646C /* StackLayoutGrowVCInteractive.swift in Sources */,
+				E50898BC2542F32C00E9646C /* CustomNode.swift in Sources */,
+				E50898D42542F32C00E9646C /* ProductCardShopFinalNode.swift in Sources */,
+				E50898A52542F32C00E9646C /* BackgroundLayoutVC.swift in Sources */,
+				E50898AE2542F32C00E9646C /* BackgroundOptionsNode.swift in Sources */,
+				E50898C62542F32C00E9646C /* InsetLayoutVCInteractive.swift in Sources */,
+				E50898B92542F32C00E9646C /* StackDirectionOptionsNode.swift in Sources */,
+				E50898A12542F32C00E9646C /* ProductCardWishlistTableViewCell.swift in Sources */,
+				E50898D82542F32C00E9646C /* CreateProductCardFinalViewController.swift in Sources */,
+				E50898CA2542F32C00E9646C /* CreateProductCardViewController.swift in Sources */,
+				E50898CD2542F32C00E9646C /* ProductCardShopNode.swift in Sources */,
+				E50898B32542F32C00E9646C /* Exercise3CheatVC.swift in Sources */,
+				E50898C52542F32C00E9646C /* StackLayoutVCInteractive.swift in Sources */,
+				E50898CF2542F32C00E9646C /* ProductCardWishlistNode.swift in Sources */,
+				E50898BA2542F32C00E9646C /* StackAlignOptionsNode.swift in Sources */,
+				E50898A42542F32C00E9646C /* BackgroundLayoutVCInteractive.swift in Sources */,
+				E50898D52542F32C00E9646C /* ProductCardWishlistFinalNode.swift in Sources */,
+				E50898C82542F32C00E9646C /* OverlayLayoutVC.swift in Sources */,
+				E50898C22542F32C00E9646C /* StackLayoutShrinkVCInteractive.swift in Sources */,
+				E50898BE2542F32C00E9646C /* LayoutExercise3VC.swift in Sources */,
+				E50898B42542F32C00E9646C /* Exercise1CheatVC.swift in Sources */,
+				E50898D12542F32C00E9646C /* ProductCardReviewNode.swift in Sources */,
+				E50898C32542F32C00E9646C /* StackLayoutShrinkVC.swift in Sources */,
+				E50898C02542F32C00E9646C /* LayoutBreakdown2VC.swift in Sources */,
+				E50898B82542F32C00E9646C /* StackSpacingOptionsNode.swift in Sources */,
+				E50898BD2542F32C00E9646C /* LayoutExercise1VC.swift in Sources */,
+				E50898DA2542F32C00E9646C /* ProductCardFinalNode.swift in Sources */,
+				E50898A72542F32C00E9646C /* WrapperLayoutVC.swift in Sources */,
+				E50898AF2542F32C00E9646C /* OverlayOptionsNode.swift in Sources */,
+				E50898A62542F32C00E9646C /* InteractiveListVC.swift in Sources */,
+				E50898C12542F32C00E9646C /* LayoutBreakdown1VC.swift in Sources */,
+				E50898D92542F32C00E9646C /* ProductCardViewController.swift in Sources */,
+				E50898DD2542F32C00E9646C /* BasicTextureViewController.swift in Sources */,
+				E50898CB2542F32C00E9646C /* ProductCardStarterViewController.swift in Sources */,
+				E50898CC2542F32C00E9646C /* ProductCardNode.swift in Sources */,
+				E50898B12542F32C00E9646C /* InsetOptionsNode.swift in Sources */,
+				E50898D62542F32C00E9646C /* ProductCardDescriptionFinalNode.swift in Sources */,
+				E50898BB2542F32C00E9646C /* BoxNode.swift in Sources */,
+				E50898A32542F32C00E9646C /* UIKitDemoViewController.swift in Sources */,
+				E508989E2542F32C00E9646C /* RatingView.swift in Sources */,
+				E50898E02542F32C00E9646C /* BasicTextureFinishedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,15 +823,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TextureWorkshop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = id.jeffersonsetiawan.TextureWorkshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,15 +845,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TextureWorkshop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = id.jeffersonsetiawan.TextureWorkshop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

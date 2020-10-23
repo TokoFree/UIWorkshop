@@ -8,13 +8,32 @@
 import UIKit
 
 internal enum Route: String {
-    case lesson1 = "Lesson 1"
+    case basicUIKit = "Basic UIKit"
+    case basicTexture = "Basic Texture"
+    case createProductCard = "Create Product Card"
+    case interactiveLayout = "ASLayoutSpec - Interactive"
+    case uiKitDemo = "UIKit Demo"
+    case productCardVC = "Product Card VC"
 }
 
 internal final class ViewController: UIViewController {
     private let tableView = UITableView()
 
-    private let routes: [Route] = [.lesson1]
+    private let routes: [Route] = [
+        // UIKit vs Texture
+        .basicUIKit,
+        .basicTexture,
+        
+        // Interactive ASLayoutSpec
+        .interactiveLayout,
+        
+        // Create Product Card
+        .createProductCard,
+        .productCardVC,
+        
+        //
+        .uiKitDemo
+    ]
 
     internal init() {
         super.init(nibName: nil, bundle: nil)
@@ -26,6 +45,7 @@ internal final class ViewController: UIViewController {
 
     override internal func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isTranslucent = false
         view.addSubview(tableView)
         title = "Texture Workshop"
 
@@ -44,9 +64,24 @@ extension ViewController: UITableViewDelegate {
 
         let selectedRoute = routes[indexPath.row]
         switch selectedRoute {
-        case .lesson1:
-            let viewController = Lesson1VC()
+        case .basicUIKit:
+            let viewController = BasicUIKitViewController()
             navigationController?.pushViewController(viewController, animated: true)
+        case .basicTexture:
+            let viewController = BasicTextureViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case .createProductCard:
+            let viewController = CreateProductCardViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case .interactiveLayout:
+            let viewController = InteractiveListVC()
+            navigationController?.pushViewController(viewController, animated: true)
+        case .uiKitDemo:
+            let vc = UIKitDemoViewController(nibName: "UIKitDemoViewController", bundle: nil)
+            navigationController?.pushViewController(vc, animated: true)
+        case .productCardVC:
+            let vc = ProductCardViewController()
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
