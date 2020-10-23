@@ -37,11 +37,11 @@ This session shows how easy it is to update the UI of a `Texture` component.
 
 [F. Add Wishlist](#f-add-wishlist)
 
-[G. Summary](#f-summary)
+[G. Summary](#g-summary)
 
-[H. Move ProductCard to Lists](#move-productcard-to-lists)
+[H. Move ProductCard to Lists](#h-move-productcard-to-lists)
 
-[I. Create Live Update on Component](#create-live-update-on-component)
+[I. Create Live Update on Component](#i-create-live-update-on-component)
 
 ## Creating a Product Card
 
@@ -125,26 +125,7 @@ Let's put product image, name and price first.
     return mainInset
     ```
 
-4. Add this node into `Start/ProductCardNode.swift`
-    ```swift
-    let descriptionNode: ProductCardDescriptionNode
-    ```
-    ```swift
-    descriptionNode = ProductCardDescriptionNode(description: model.description)
-    ```
-    ```swift
-    let mainStack = ASStackLayoutSpec(
-        direction: .horizontal,
-        spacing: 8,
-        justifyContent: .start,
-        alignItems: .start,
-        children: [
-            imageNode,
-            descriptionNode
-        ]
-    )
-    ```
-5. Run the project and see the result
+4. Run the project and see the result
 
 #### C. Create Shop Row
 
@@ -235,6 +216,26 @@ So, let's move the vertical stack
     ```
 
 4. Then paste it to `Start/Components/ProductCardDescriptionNode.swift`
+
+5. Add this node into `Start/ProductCardNode.swift`
+    ```swift
+    let descriptionNode: ProductCardDescriptionNode
+    ```
+    ```swift
+    descriptionNode = ProductCardDescriptionNode(description: model.description)
+    ```
+    ```swift
+    let mainStack = ASStackLayoutSpec(
+        direction: .horizontal,
+        spacing: 8,
+        justifyContent: .start,
+        alignItems: .start,
+        children: [
+            imageNode,
+            descriptionNode
+        ]
+    )
+    ```
 
 > Phew, now that we got that out of the way, let's... WAIT! One more thing. This shop row is a bit different from name row and price row, because the badge may or may not be displayed based on the shop type.
 
@@ -425,12 +426,12 @@ One thing you might notice about this row is that the stars are stacked horizont
 
 This row is optional, as free shipping badge may only be shown if `isFreeShipping == true` (refer to `Start/CreateProductCardViewController.swift`). Also, this row only contains one image node so there is no need to create a new node class.
 
-1. Add this node into `Start/ProductCardNode.swift`
+1. Add this node into `Start/ProductCardDescriptionNode.swift`
     ```swift
     let freeShippingNode: ASImageNode?
     ```
     ```swift
-    freeShippingNode = model.isFreeShipping? ASImageNode() : nil
+    freeShippingNode = description.isFreeShipping? ASImageNode() : nil
     freeShippingNode?.image = UIImage(named: "free_shipping")
     freeShippingNode?.style.preferredSize = CGSize(width: 67, height: 16)
     ```
@@ -461,18 +462,24 @@ This row is optional, as free shipping badge may only be shown if `isFreeShippin
 
 in this part, we will refactor the ImageNode to Class `ProductCardImageNode`, and we will attach a wishlist in the top corner(inside) of the image
 
-1. Open `ProductCardNode.` 
-2. move `imageNode` into `ProductCardImageNode`
+1. Open `ProductCardNode`. 
+
+2. Move `imageNode` into `ProductCardImageNode`.
  ```swift
   let imageNode: ASNetworkImageNode
   // in init
   imageNode = ASNetworkImageNode()
-  imageNode.url = model.imageURL
+  imageNode.url = imageUrl
   imageNode.style.preferredSize = CGSize(width: 80, height: 80)
   imageNode.cornerRadius = 6
   ```
   
-3. Create layout for `ProductCardImageNode`
+3. Add `ProductCardWishlistNode`
+    ```swift
+    let wishlistNode = ProductCardWishlistNode()
+    ```
+  
+4. Create layout for `ProductCardImageNode`
  ```swift
  let wishlistInset = ASInsetLayoutSpec(
    insets: UIEdgeInsets(top: 4, left: 4, bottom: .infinity, right: .infinity),
@@ -481,7 +488,29 @@ in this part, we will refactor the ImageNode to Class `ProductCardImageNode`, an
   
  return ASOverlayLayoutSpec(child: imageNode, overlay: wishlistInset)
   ```
-4. Now, the image should have a wishlist
+  
+5. Add `ProductCardImageNode` into `ProductCardNode`
+    ```swift
+    let imageNode: ProductCardImageNode
+    ```
+    ```swift
+    imageNode = ProductCardImageNode(imageUrl: model.imageUrl)
+    ```
+    ```swift
+    let mainStack = ASStackLayoutSpec(
+        direction: .horizontal,
+        spacing: 8,
+        justifyContent: .start,
+        alignItems: .start,
+        children: [
+            imageNode,
+            descriptionNode
+        ]
+    )
+    ```
+    
+6. Run the project and see the result
+    
      
 #### G. Summary
 
@@ -533,17 +562,17 @@ Next, we will create a `List of Product Card` using `TableNode.`
 
 In this part, we will perform a live update component on wishlist refer to product card expected wishlist could toggle on and off.
 
-1. Open `start/ProductCardWishlistNode`
-2. add action to activeNode and inactiveNode
+1. Open `start/ProductCardWishlistNode`.
+2. Add action to activeNode and inactiveNode.
  ```swift
   activeNode.addTarget(self, action: #selector(changeWishlistState), forControlEvents: .touchUpInside)
   inactiveNode.addTarget(self, action: #selector(changeWishlistState), forControlEvents: .touchUpInside)
   ```
-3. move to line create a new property to handle state wishlist
+3. Move to line create a new property to handle state wishlist.
  ```swift
   var isWishlist = false
   ```
-4. move to function `changeWishlistState` add toogle on and toogle off for wishlist
+4. Move to function `changeWishlistState` add toogle on and toogle off for wishlist
  ```swift
   @objc func changeWishlistState() { 
    // change the state vice versa 
@@ -552,7 +581,7 @@ In this part, we will perform a live update component on wishlist refer to produ
   }
   ```
  by calling `setNeedsLayout()` we trigger the `layoutSpecThatFits` to layout again.
-5. move to `layoutSpecThatFits` this function will return an active node because we want to toggle on/off the wishlist so that we will add
+5. Move to `layoutSpecThatFits` this function will return an active node because we want to toggle on/off the wishlist so that we will add.
  ```swift
   var child: ASImageNode
   
@@ -569,6 +598,6 @@ In this part, we will perform a live update component on wishlist refer to produ
   ```
 6. Build and run 
 
-In this part, you can see that our `lists of product cards` are working fine. You can `toggle the wishlist,` but we have an issue inset from our `product cards` won't work, so here is the challenge fixing the component inset. 
-- clue: background and insets
-- cheat: you can checkout branch `BeautyProductCard.`
+In this part, you can see that our `lists of product cards` are working fine. You can `toggle the wishlist,` but we have an inset issue from our product cards, so the challenge is to fixing the card inset. 
+- Clue: background and insets
+- Cheat: you can checkout branch `BeautyProductCard`.
