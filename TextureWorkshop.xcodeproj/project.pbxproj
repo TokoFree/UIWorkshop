@@ -213,19 +213,19 @@
 		E50898472542F32B00E9646C /* Session 2 - InteractiveUI */ = {
 			isa = PBXGroup;
 			children = (
-				E50898482542F32B00E9646C /* Background */,
-				E508984B2542F32B00E9646C /* ListVC */,
-				E508984D2542F32B00E9646C /* Wrapper */,
-				E50898502542F32B00E9646C /* Center */,
 				E50898532542F32B00E9646C /* README.md */,
-				E50898542542F32B00E9646C /* StackGrow */,
+				E508984B2542F32B00E9646C /* ListVC */,
 				E50898572542F32B00E9646C /* Components */,
-				E50898682542F32B00E9646C /* Exercise */,
-				E508986E2542F32B00E9646C /* LayoutBreakdown */,
-				E50898712542F32B00E9646C /* StackShrink */,
-				E50898742542F32B00E9646C /* Stack */,
+				E508984D2542F32B00E9646C /* Wrapper */,
 				E50898772542F32B00E9646C /* Inset */,
+				E50898742542F32B00E9646C /* Stack */,
+				E50898542542F32B00E9646C /* StackGrow */,
+				E50898712542F32B00E9646C /* StackShrink */,
+				E50898502542F32B00E9646C /* Center */,
+				E50898482542F32B00E9646C /* Background */,
 				E508987A2542F32B00E9646C /* Overlay */,
+				E508986E2542F32B00E9646C /* LayoutBreakdown */,
+				E50898682542F32B00E9646C /* Exercise */,
 			);
 			path = "Session 2 - InteractiveUI";
 			sourceTree = "<group>";
@@ -378,10 +378,10 @@
 		E508987D2542F32B00E9646C /* Session 3 - Create Product Card */ = {
 			isa = PBXGroup;
 			children = (
-				E508987E2542F32B00E9646C /* Start */,
 				E50898882542F32B00E9646C /* README.md */,
-				E50898892542F32B00E9646C /* End */,
 				E50898932542F32B00E9646C /* Product.swift */,
+				E508987E2542F32B00E9646C /* Start */,
+				E50898892542F32B00E9646C /* End */,
 			);
 			path = "Session 3 - Create Product Card";
 			sourceTree = "<group>";
@@ -390,8 +390,8 @@
 			isa = PBXGroup;
 			children = (
 				E508987F2542F32B00E9646C /* CreateProductCardViewController.swift */,
-				E50898802542F32B00E9646C /* ProductCardStarterViewController.swift */,
 				E50898812542F32B00E9646C /* ProductCardNode.swift */,
+				E50898802542F32B00E9646C /* ProductCardStarterViewController.swift */,
 				E50898822542F32B00E9646C /* Components */,
 			);
 			path = Start;
@@ -400,11 +400,11 @@
 		E50898822542F32B00E9646C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E50898862542F32B00E9646C /* ProductCardDescriptionNode.swift */,
 				E50898832542F32B00E9646C /* ProductCardShopNode.swift */,
+				E50898872542F32B00E9646C /* ProductCardReviewNode.swift */,
 				E50898842542F32B00E9646C /* ProductCardImageNode.swift */,
 				E50898852542F32B00E9646C /* ProductCardWishlistNode.swift */,
-				E50898862542F32B00E9646C /* ProductCardDescriptionNode.swift */,
-				E50898872542F32B00E9646C /* ProductCardReviewNode.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -412,10 +412,10 @@
 		E50898892542F32B00E9646C /* End */ = {
 			isa = PBXGroup;
 			children = (
-				E508988A2542F32B00E9646C /* Components */,
 				E50898902542F32B00E9646C /* CreateProductCardFinalViewController.swift */,
-				E50898912542F32B00E9646C /* ProductCardViewController.swift */,
 				E50898922542F32B00E9646C /* ProductCardFinalNode.swift */,
+				E50898912542F32B00E9646C /* ProductCardViewController.swift */,
+				E508988A2542F32B00E9646C /* Components */,
 			);
 			path = End;
 			sourceTree = "<group>";
@@ -423,11 +423,11 @@
 		E508988A2542F32B00E9646C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E508988B2542F32B00E9646C /* ProductCardImageFinalNode.swift */,
-				E508988C2542F32B00E9646C /* ProductCardShopFinalNode.swift */,
-				E508988D2542F32B00E9646C /* ProductCardWishlistFinalNode.swift */,
 				E508988E2542F32B00E9646C /* ProductCardDescriptionFinalNode.swift */,
+				E508988C2542F32B00E9646C /* ProductCardShopFinalNode.swift */,
 				E508988F2542F32B00E9646C /* ProductCardReviewFinalNode.swift */,
+				E508988B2542F32B00E9646C /* ProductCardImageFinalNode.swift */,
+				E508988D2542F32B00E9646C /* ProductCardWishlistFinalNode.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
