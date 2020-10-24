@@ -80,7 +80,7 @@ extension ViewController: UITableViewDelegate {
             let vc = UIKitDemoViewController(nibName: "UIKitDemoViewController", bundle: nil)
             navigationController?.pushViewController(vc, animated: true)
         case .productCardVC:
-            let vc = ProductCardViewController()
+            let vc = ProductCardStarterViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

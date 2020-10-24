@@ -13,6 +13,13 @@ class ProductCardStarterViewController: ASDKViewController<ASDisplayNode> {
     override init() {
         super.init(node: ASDisplayNode())
         node.backgroundColor = .white
+        
+        navigationItem.setRightBarButton(UIBarButtonItem(title: "Expected", style: .plain, target: self, action: #selector(goToResultViewController)), animated: false)
+    }
+    
+    @objc func goToResultViewController() {
+        let vc = ProductCardViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     required init?(coder: NSCoder) {
